@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <!--
+        Dear Source Code Reader. This was hammered together in a few
+        hours by someone who's spent a lifetime avoiding web coding.
+        As a result it is _nightmareish._ For the love of all that is
+        good, pure, and gentle in this world _do not look._ 
+
+        Seriously though. 
+
+        --GoH
+    -->
+    <head>
+        <title>Trixiewriter version 0.1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Trixiewriter tool">
+        <meta name="author" content="GhostOfHeraclitus">
+        <link href="lib/bootstrap.min.css" rel="stylesheet">
+        <link href="lib/jquery.highlight-within-textarea.css" rel="stylesheet">
+        <script src="lib/jquery-3.3.1.min.js"></script>
+        <script src="lib/jquery.highlight-within-textarea.js"></script>
+        <script src="lib/bootstrap.min.js"></script>
+        <script src="./twcode.js"></script>
+        <link rel="stylesheet" type="text/css" href="twstyle.css"> 
+    </head>
+    <body>
+        <div class="container-fluid">
+                <h1 style="text-align: center">TrixieWriter 0.1a</h1>
+                <div class="row">
+                    <p style="text-align: justify;font-size: smaller;padding-left: 2em; padding-right: 2em;">
+                        Dear user, to the left is the field you type the story in. 
+                        Everything you type is checked for Trixie-correctness
+                        that is to say, the code will check whether you use words
+                        outside the wordlist which is available on the right. The 
+                        blue words are clickable and will open up a list of words
+                        that exist within their category. If you need to type a comment 
+                        to the non-Trixie reader such
+                        as intended illustrations or anything of the sort, merely 
+                        start a line with a # and nothing in it will be checked for
+                        Trixie-correctness. The line will also turn grey as a
+                        reminder. TrixieWriter ignores all other punctuation, so punctuate at will. 
+                        Oh, and sorry for how buggy this is.
+                        <div style="text-align: justify;font-size: x-small; padding-left: 2em; padding-right: 2em;">
+                                Trixiewriter is copylefted by GhostOfHeraclitus Year Of Our Celestia 2018. Licensed under the MIT license. 
+                        </div>                
+                    </p>
+                </div>
+            <div class="row" style="height:80vh;">
+                <div id="writingpanel" class="col-md-6">
+                    <textarea id="wa" style="height:80vh;width:100%;resize: none;min-height:16em;"></textarea>
+                </div>
+                <div id="wordlist" class="col-md-6">
+                    <div id="words" class="panel panel-default">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

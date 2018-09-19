@@ -1,0 +1,15 @@
+.hwt-content mark.wrongWord{
+    background-color: red;
+}
+
+.hwt-content mark.sentenceTooLong{
+    background-color: orange; 
+}
+
+.hwt-content mark.sentenceTooTricky{
+    background-color: purple;
+}
+
+.hwt-content mark.comment{
+    background-color: lightgray;
+}
